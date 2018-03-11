@@ -1,0 +1,84 @@
+body {
+    display: block;
+    padding: 0 10px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#catintro, #catstage {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.catpic {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.75);
+}
+
+.catpic:hover {
+    border: 1px solid black;
+}
+
+.catpic:active {
+    opacity: 0.7;
+}
+
+.catcol h2 {
+    text-align: center;
+}
+
+.counter {
+    width: 400px;
+    max-width: 100%;
+    height: 80px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 3rem;
+}
+
+#catmenucontainer,
+#admincontainer {
+    margin: 0 auto 10px auto;
+    max-width: 300px;
+    border: 1px solid black;
+    padding: 0 20px 20px 20px;
+}
+
+#catmenu {
+    font-size: 2rem;
+}
+
+#catmenu li:hover {
+    cursor: pointer;
+}
+
+.formrow {
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 5px 0;
+}
+
+#admin-form label {
+    display: inline-block;
+    width: 100%;
+}
+
+#admin-form input {
+    width: 100%;
+}
+
+.formbtn {
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    width: 117px;
+}

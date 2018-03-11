@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Cat Clicker</title>
+    <meta name="description" content="My interpretation and implementation of Cat Clickr">
+    <meta name="author" content="Obi-Bram Kenobeer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.0.0.min.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="catintro">
+                    <h1>Click on your favorite kitty!</h1>
+                    <h3>As many times you want. Because who keeps count anyway? (we do)</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5 col-xs-12">
+                <div id="catmenucontainer">
+                    <h2>Our cats:</h2>
+                    <ul id="catmenu"></ul>
+                    <button class="formbtn" id="admin-btn">Update cat</button>
+                </div>
+                <div id="admincontainer">
+                    <h3>Update selected cat</h3>
+                    <form id='admin-form'>
+                        <div class="formrow">
+                            <label for="admin-catname">Cat name:</label>
+                            <input type="text" class="catinput" id="admin-catname">
+                        </div>
+
+                        <div class="formrow">
+                            <label for="admin-catimage">Cat image:</label>
+                            <input type="text" class="catinput" id="admin-catimage">
+                        </div>
+
+                        <div class="formrow">
+                            <label for="admin-catclicks">Cat clicks:</label>
+                            <input type="text" class="catinput" id="admin-catclicks">
+                        </div>
+                    </form>
+                    <button class="formbtn" id="admin-cancel">Cancel</button>
+                    <button class="formbtn" id="admin-save">Save</button>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-xs-12 catcol" id="catstage">
+                <h2 id="catname"></h2>
+                <img class="catpic" id="catimage">
+                <h3 class="counter" id="catcounter"></h3>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
